@@ -5,8 +5,11 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
-import Cards from "../Component/Card/Cards";
 import DashboardHome from "../Pages/Dashboard/DashboardHome/DashboardHome";
+import CreateTask from "../Pages/Dashboard/CreateTask";
+import ToDoList from "../Pages/ToDoList.jsx/ToDoList";
+import OngoingList from "../Pages/OngingList/OngoingList";
+import CompleteList from "../Pages/CompleteList.jsx/CompleteList";
 
 export const Route = createBrowserRouter([
     {
@@ -36,9 +39,26 @@ export const Route = createBrowserRouter([
         </PrivateRoute>,
         children: [
             {
-                path: '/Dashboard',
+                path: 'Dashboard',
                 element: <DashboardHome />
-            }
+            },
+            {
+                path: 'create-task',
+                element: <CreateTask />
+            },
+            {
+                path: 'to-do-list',
+                element: <ToDoList />
+            },
+            {
+                path: 'ongoing-list',
+                element: <OngoingList />
+            },
+            {
+                path: 'completed-list',
+                element: <CompleteList />
+            },
+
         ]
     }
 ]);

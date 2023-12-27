@@ -16,7 +16,7 @@ const DashboardMenu = () => {
                 Home
             </NavLink></li>
             <li><NavLink
-                to="/to-do-list"
+                to="to-do-list"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending text-2xl font-bold text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
                         : isActive ? "active text-2xl font-bold text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
@@ -26,7 +26,7 @@ const DashboardMenu = () => {
                 To-Do list
             </NavLink></li>
             <li><NavLink
-                to="/ongoing-list"
+                to="ongoing-list"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending text-2xl font-bold text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
                         : isActive ? "active text-2xl font-bold text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
@@ -36,7 +36,7 @@ const DashboardMenu = () => {
                 Ongoing list
             </NavLink></li>
             <li><NavLink
-                to="/completed-list"
+                to="completed-list"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending text-2xl font-bold text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
                         : isActive ? "active text-2xl font-bold text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
@@ -46,7 +46,7 @@ const DashboardMenu = () => {
                 Completed list
             </NavLink></li>
             <li><NavLink
-                to="/create-task"
+                to="create-task"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending text-2xl font-bold text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
                         : isActive ? "active text-2xl font-bold text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
